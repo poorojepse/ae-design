@@ -1,0 +1,45 @@
+#hero
+   +position(relative)
+   box-shadow: 0px 0px 7px 2px $color-sub-alt
+   background:
+      image: url('../img/hero-bg.jpg')
+      size: auto 250%
+      repeat: no-repeat
+      
+   &:before
+      content: ''
+      height: 100%
+      z-index: 1
+      +position(absolute, 0px 0px null 0px)
+      background-color: transparent
+      +background(linear-gradient(to bottom, $color-sub-alt, transparent 120%))
+   
+   .hero-container
+      @extend .container
+      z-index: 1
+      
+      > *
+         opacity: 0
+         +transition(all 1s ease-out 0s)   
+         
+      .title
+         color: $color-alt
+         
+      .blurb
+         +transform(translateY(20px))
+      
+      .separator
+         max-width: 0px
+         
+      &.show-hero         
+         > *
+            +transform(none)
+            opacity: 1
+            
+         .separator
+            max-width: 100px
+         
+
+@media screen and (min-width: 992px)
+   #hero
+      background-size: cover 

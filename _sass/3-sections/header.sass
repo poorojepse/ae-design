@@ -1,0 +1,139 @@
+#header
+   +position(absolute, 0px 0px null 0px)
+   z-index: 3
+   
+   &:before
+      content: ''
+      height: 2px
+      background-color: $color-sub
+      +position(absolute, 10px 0px null 0px)
+   
+   .header-container-flex
+      @extend .container
+      +display(block)
+      padding: 0px 1rem
+      overflow: visible 
+      text-align: center
+      background-color: $color-sub
+      box-shadow: 0px 0px 9px 4px rgba(black, .4)
+      margin: 0px .8rem
+         
+      .logo
+         +display(none)
+            
+      .social         
+         a
+            +display(inline-block)
+            height: 1.667rem
+            margin: 20px 5px 10px      
+               
+            svg
+               fill: $color-alt
+               +size(auto 100%)
+
+         .fb
+            margin-left: 0px
+
+      .nav-menu
+         padding: 7px
+         
+         .nav-item
+            +position(relative)
+            margin: 0px 12px
+            margin-left: 0px
+            
+@media screen and (min-width: 410px)   
+   #header
+      .header-container-flex  
+         text-align: initial
+         background-color: transparent
+         box-shadow: none
+         margin-left: auto
+         margin-right: auto
+
+         .social
+            float: right
+            margin: 10px 8px 0px 0px
+
+            a
+               margin: 10px 5px        
+
+               svg
+                  fill: $color-main
+
+         .nav-menu
+            background-color: $color-sub
+            padding: 20px
+            box-shadow: 0px 0px 9px 4px rgba(black, .4)
+               
+@media screen and (min-width: 500px) 
+   #header
+      .header-container-flex
+         .social
+            margin-right: 5px
+            
+@media screen and (min-width: 550px) 
+   #header
+      .header-container-flex
+         .social
+            a
+               margin: 10px
+            
+               svg
+                  fill: $color-main
+
+            
+@media screen and (min-width: 768px)            
+   #header
+      .header-container-flex
+         +display(flex)
+         +flex-wrap(nowrap) 
+         height: 80px
+
+         .logo
+            +flex-grow(1)
+            height: 130%
+            +display(block)
+
+            svg
+               background-color: $color-sub
+               +size(auto 100%)
+               padding: 8px
+               box-shadow: 0px 0px 8px 3px rgba(black, .3)
+
+            .ae
+               fill: $color-main
+
+            .design
+               fill: $color-alt
+
+         .social
+            +align-self(center)
+            margin: 0px 10px 0px 0px
+            a              
+               svg
+                  fill: $color-alt-lighter
+                  +transition-duration(.3s)
+                  +transition-timing-function(ease-out)
+
+               &:hover svg
+                  fill: $color-main
+               
+         .nav-menu
+            padding: 24px
+
+            .nav-item
+               margin: 0px 12px
+
+               &:before
+                  content: ''
+                  height: 1px
+                  background-color: $color-main
+                  +position(absolute, null 50% 3px 50%)
+                  +transition-duration(.15s)
+                  +transition-timing-function(ease-out)
+
+               &:hover            
+                  &:before
+                     left: 0px
+                     right: 0px
