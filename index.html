@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<section id='bida'>
+   <div class='bida-container'>
+      <h1 class='site-title'><span class='white'>ae</span><span class='gray'>-</span><span class='red'>design</span></h1>
+      <h2 class='site-blurb'>we will give life to your business</h2>
+      <section class='service'>
+         {% for service in site.data.settings.services %}
+         <a class='' href='/'>{{service.name}}</a> 
+         {% endfor %}
+      </section>
+      <section class='viewport'>
+         <img class='desktop' src='{{site.baseurl}}/assets/img/desktop.png'>
+         <img class='ipad' src='{{site.baseurl}}/assets/img/ipad.png'>
+         <img class='iphone' src='{{site.baseurl}}/assets/img/iphone.png'>
+      </section>
+   </div>
+</section>
+
+<section id='hero'>
+   <div class='hero-container'>
+      <h1 class='title'>our team</h1>
+      <hr class='separator'>
+      <p class='blurb'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>   
+   </div>
+</section>
+
+<section id='advantage'>
+   <div class='advantage-container'>
+      <h1 class='title'>advantages</h1>
+      <hr class='separator'>
+      
+      <section class='flex-row'>
+         <div class='flex-item'>
+            <span class='svg'>{% include icons/insta.html %}</span>
+            <h3 class='sub-title'>clean and modern design</h3>
+            <p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores edolorum fuga. </p>
+         </div> 
+         <div class='flex-item'>
+            <span class='svg'>{% include icons/fb.html %}</span>
+            <h3 class='sub-title'>embed google map</h3>
+            <p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores edolorum fuga. </p>
+         </div> 
+         <div class='flex-item'>
+            <span class='svg'>{% include icons/twit.html %}</span>
+            <h3 class='sub-title'>animated scroll</h3>
+            <p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores edolorum fuga. </p>
+         </div> 
+         <div class='flex-item'>
+            <span class='svg'>{% include icons/insta.html %}</span>
+            <h3 class='sub-title'>click-to-call buttons & click-to-email links</h3>
+            <p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores edolorum fuga. </p>
+         </div> 
+         <div class='flex-item'>
+            <span class='svg'>{% include icons/fb.html %}</span>
+            <h3 class='sub-title'>responsive layouts</h3>
+            <p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores edolorum fuga. </p>
+         </div> 
+         <div class='flex-item'>
+            <span class='svg'>{% include icons/twit.html %}</span>
+            <h3 class='sub-title'>font-awesome & ionicons & svg</h3>
+            <p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores edolorum fuga. </p>
+         </div> 
+      </section>      
+   </div>   
+</section>
+
+<section id='testimony'>
+   <div class='testimony-container'>
+      <h1 class='title'>testimonies</h1>   
+      <hr class='separator'>
+      <section class='testimony'>
+         <article class='testimony-item'>
+            <figure>
+               <img src='assets/img/hero-bg.jpg'>
+               <figcaption>
+                  <h4>Clair Bebe Guday</h4>
+                  <p class='small'>Executive Producer</p>
+               </figcaption>
+            </figure>
+            <p class='desc'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+            <p class='src'>www.i-ridebohol.com</p>
+         </article>
+      </section>
+      <section class='logo'>
+         <span class='logo-item'></span>
+      </section>
+   </div>
+</section>

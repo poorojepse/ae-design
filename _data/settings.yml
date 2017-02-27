@@ -1,0 +1,13 @@
+services:
+ - {name: 'PSD to HTML/HTML5'}
+ - {name: 'Jekyll (Blog-aware, Static Site Generator)'}
+ - {name: 'Github/Github Pages'}
+ - {name: 'Website Development'}
+ - {name: 'Website Design'}
+ - {name: 'Responsive Design'}
+ - {name: 'HTML/HTML5'}
+ - {name: 'CSS2/CSS3'}
+ - {name: 'Js/Jquery'}
+ - {name: 'SCSS/SASS'}
+ - {name: 'Adobe Photoshop'}
+ - {name: 'CMS for Static Site (siteleaf, forestry, prose)'}

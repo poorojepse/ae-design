@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <title>AE-Design</title>
+   <meta charset='utf-8'>
+   <meta name='description' content=''>
+   <meta name='keywords' content=''>
+   <meta name='author' content=''>
+   <meta name='dcterms.rightsHolder' content=''>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <link rel='cannonical' href="{{site.url}}{{page.url | replace: 'index.html' ,''}}">
+   <link rel='stylesheet' href='{{site.baseurl}}/assets/css/main.css' type='text/css'>
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Khand:300,400,500|Arizonia'>
+   <link rel='shortcut icon' href='{{site.baseurl}}/favicon.ico'>
+</head>
+<body>
+<header id='header'>
+   <nav class='header-container-flex'>
+      <a class='logo' href='/'>
+         {% include icons/logo.html %}
+      </a>
+      <section class='social'>
+         <a class='insta' href='/'>{% include icons/insta.html %}</a>
+         <a class='twit' href='/'>{% include icons/twit.html %}</a>
+         <a class='fb' href='/'>{% include icons/fb.html %}</a>
+      </section>
+      
+      <section class='nav-menu'>
+         <a class='nav-item' href='/'>services</a>
+         <a class='nav-item' href='/'>support</a>
+         <a class='nav-item' href='/'>happy-hour</a>      
+      </section>   
+   </nav>      
+</header>
