@@ -16,6 +16,10 @@ function animate() {
    if ( trigAnimate > $('#hero').offset().top ) {
       $('#hero .hero-container').addClass('show-hero');
    }
+   
+   if ( trigAnimate > $('#advantage').offset().top ) {
+      $('#advantage .advantage-container').addClass('show-adv');
+   }
 }
 
 function autoAnimate() {   
