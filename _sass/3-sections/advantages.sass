@@ -10,13 +10,17 @@
          +flex-wrap(wrap)
          +justify-content(space-around)   
          margin-bottom: -1rem
+         padding-top: 1rem
          
          .flex-item
             margin-bottom: 1rem
             +position(relative)
-            +flex-basis(450px)
+            +flex-basis(330px)
+            color: white     
             padding: 1.3rem .8rem .5rem
-            color: white            
+            opacity: 0
+            +transition-timing-function(ease-out)
+            +transition-duration(1s)
                
             .svg
                +display(inline-block)
@@ -38,6 +42,20 @@
             .sub-title
                padding: 0px 1rem
                margin-bottom: .5rem
+                  
+      &.show-adv
+         > *
+            +transform(none)
+            opacity: 1
+         
+         .separator
+            max-width: 100px
+            
+         .flex-row .flex-item    
+            @for $i from 1 through 6
+               &:nth-child(#{$i})
+                  opacity: 1
+                  +transition-delay(.3s * $i)
                   
 @media screen and (min-width: 768px)
    #advantage .advantage-container .flex-row

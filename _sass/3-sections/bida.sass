@@ -34,7 +34,6 @@
          
          a
             color: $color-alt-lighter
-            margin: 0px 8px
             +position(relative)
             +transition-duration(.5s)
             +transition-timing-function(ease-in-out)
@@ -45,7 +44,7 @@
                color: lighten($color-alt-lighter, 30)
             
       .viewport      
-         height: 235px
+         height: 220px
          max-width: 750px
          margin: 0px auto
          +position(relative)
@@ -128,6 +127,7 @@
             line-height: 1.4
 
             a
+               margin: 0px 8px
                width: auto
                +transition-timing-function(ease-out)
 
@@ -173,8 +173,7 @@
                size: 28px
                size: 1.556rem
 
-         .service         
-            a
-               &:hover
-                  color: $color-main
+         .service a
+            &:hover
+               color: $color-main
          

@@ -17,19 +17,14 @@
    .hero-container
       @extend .container
       z-index: 1
-      
-      > *
-         opacity: 0
-         +transition(all 1s ease-out 0s)   
          
       .title
          color: $color-alt
          
       .blurb
-         +transform(translateY(20px))
-      
-      .separator
-         max-width: 0px
+         opacity: 0
+         +transform(translateY(50px))
+         +transition(all 1s ease-out 0s)   
          
       &.show-hero         
          > *

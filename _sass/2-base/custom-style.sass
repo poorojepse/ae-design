@@ -9,10 +9,13 @@
    
 .title  
    margin: 0px
+   opacity: 0
    line-height: .9
    +position(relative)
+   +transition(all 1s ease-out 0s)   
    
 .blurb
+   margin: 0px
    color: $color-alt
    max-width: 870px
    +display(inline-block)
@@ -20,9 +23,11 @@
       size: 28px
       size: 1.556rem
       
-hr
+.separator
    border: 0px
-   +size(5rem 0.3889rem)
    background-color: $color-sub
    margin-bottom: 2.5rem
+   +size(5rem 0.3889rem)
+   +transition(all 1s ease-out 0s)   
+   max-width: 0px
    
